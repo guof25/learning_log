@@ -1,0 +1,33 @@
+{% extends "learning_logs/base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="jumbotron text-center">
+    <div class="container">
+        <a href="/" class="lang-logo">
+            <img src="{% static 'lang-logo.png'%}">
+        </a>
+        <h1>Getting Started with your learning</h1>
+        <p>
+            <br>
+            Register an account to make your own Learning Log, and list the topics you're learning about.
+        </p>
+        <a type ="button" class="btn btn-lg btn-primary" ><span class="glyphicon glyphicon-user"></span>  Register an account</a>
+    </div>
+    
+</div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+    <h3>
+        Whenever you learn something new about a topic, make an entry
+    summarizing what you've learned.    
+    </h3>
+    <hr>
+    <div class="alert alert-info text-center" role="alert">
+        To deploy your own app, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-python" class="alert-link">Getting Started with Python on Heroku</a> tutorial.
+    </div>
+</div>
+
+{% endblock content %}
